@@ -276,10 +276,12 @@ else
   \ " * Set %varname%.\n" .
   \ " *\n" .
   \ " * @param %varname% the value to set.\n" . 
+  \ " * @return this \n" . 
   \ " */\n" .
   \ "function %funcname%($%varname%)\n" .
   \ "{\n" .
   \ "    $this->%varname% = $%varname%;\n" .
+  \ "    return this;\n" .
   \ "}"
 endif
 
